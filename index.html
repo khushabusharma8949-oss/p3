@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food Mood</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">🍜 Food Mood</div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <button onclick="changeTheme()" class="theme-btn">☀</button>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+            <p class="small-title">WELCOME TO FOOD MOOD</p>
+
+            <h1>
+                Your Mood <br>
+                Deserves <span>Good Food.</span>
+            </h1>
+
+            <p>
+                Fresh ingredients, delicious recipes and a little
+                happiness served on every plate.
+            </p>
+
+            <button onclick="showMessage()" class="main-btn">
+                Explore Menu →
+            </button>
+        </div>
+
+        <div class="food-circle">
+            🍕
+        </div>
+
+    </section>
+
+
+    <!-- Special Section -->
+    <section class="special">
+
+        <div>
+            <p class="tag">TODAY'S SPECIAL</p>
+            <h2>Cheesy Pizza</h2>
+
+            <p>
+                Crispy base loaded with cheese, vegetables and
+                our special secret sauce.
+            </p>
+        </div>
+
+        <div class="price">
+            ₹249
+        </div>
+
+    </section>
+
+
+    <!-- Menu -->
+    <section id="menu" class="menu-section">
+
+        <p class="tag">OUR MENU</p>
+
+        <h2>Pick Your Mood</h2>
+
+        <div class="filter-buttons">
+            <button onclick="filterFood('all')">All</button>
+            <button onclick="filterFood('indian')">Indian</button>
+            <button onclick="filterFood('fast')">Fast Food</button>
+            <button onclick="filterFood('drink')">Drinks</button>
+        </div>
+
+
+        <div class="food-container">
+
+            <div class="food-card indian">
+                <div class="emoji">🍛</div>
+                <h3>Paneer Tikka</h3>
+                <p>Spicy & smoky Indian favourite</p>
+                <b>₹180</b>
+            </div>
+
+
+            <div class="food-card fast">
+                <div class="emoji">🍔</div>
+                <h3>Classic Burger</h3>
+                <p>Loaded with fresh vegetables</p>
+                <b>₹150</b>
+            </div>
+
+
+            <div class="food-card fast">
+                <div class="emoji">🍕</div>
+                <h3>Cheese Pizza</h3>
+                <p>Extra cheese with crispy crust</p>
+                <b>₹249</b>
+            </div>
+
+
+            <div class="food-card drink">
+                <div class="emoji">🥤</div>
+                <h3>Cold Coffee</h3>
+                <p>Cold, creamy & refreshing</p>
+                <b>₹100</b>
+            </div>
+
+
+            <div class="food-card indian">
+                <div class="emoji">🥘</div>
+                <h3>Veg Biryani</h3>
+                <p>Fragrant rice with vegetables</p>
+                <b>₹190</b>
+            </div>
+
+
+            <div class="food-card drink">
+                <div class="emoji">🍹</div>
+                <h3>Fresh Mocktail</h3>
+                <p>Perfect drink for a happy mood</p>
+                <b>₹130</b>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <div class="about-box">
+            <p class="tag">WHY FOOD MOOD?</p>
+
+            <h2>Food that makes<br>you smile.</h2>
+
+            <p>
+                At Food Mood, we believe food is not just about
+                eating. It is about enjoying moments with friends,
+                family and yourself.
+            </p>
+
+            <div class="features">
+
+                <div>
+                    <strong>01</strong>
+                    <p>Fresh Ingredients</p>
+                </div>
+
+                <div>
+                    <strong>02</strong>
+                    <p>Friendly Service</p>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <p>Happy Prices</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <p class="tag">GET IN TOUCH</p>
+
+        <h2>Ready to eat?</h2>
+
+        <p>Visit us today and make your mood delicious.</p>
+
+        <button onclick="orderFood()" class="main-btn">
+            Order Now 🍽
+        </button>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <h3>🍜 Food Mood</h3>
+        <p>Eat well. Feel good. Repeat.</p>
+
+        <p class="copyright">
+            © 2026 Food Mood | Designed with HTML, CSS & JavaScript
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
